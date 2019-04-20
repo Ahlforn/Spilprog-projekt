@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -13,6 +12,7 @@ public class GameController : MonoBehaviour
     public int health;
     public GameObject explosionPrefab;
     public GameObject chest;
+    public GameObject retryMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +58,7 @@ public class GameController : MonoBehaviour
         if(health == 0)
         {
             ActorExplode();
+            retryMenu.gameObject.SetActive(true);
         }
     }
 
@@ -66,6 +67,7 @@ public class GameController : MonoBehaviour
         Vector3 pos = actor.transform.position;
         Destroy(actor);
         GameObject explosion = Instantiate(explosionPrefab, pos, transform.rotation);
+        retryMenu.gameObject.SetActive(true);
     }
 
     public void GoalEntered()
@@ -77,5 +79,15 @@ public class GameController : MonoBehaviour
         GameObject explosion = Instantiate(explosionPrefab, pos, transform.rotation);
 
         Invoke("ActorExplode", 6);
+    }
+
+    public void RetryLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }

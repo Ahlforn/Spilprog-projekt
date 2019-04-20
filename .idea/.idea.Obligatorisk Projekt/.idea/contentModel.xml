@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="FromAssetStore" t="Include">
+          <e p="BrokenVector" t="Include">
+            <e p="FreeLowPolyPack" t="Include">
+              <e p="Readme.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Free Low Poly Desert Pack" t="Include">
+            <e p="Materials" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Vertex_Color_Basic.shader" t="Include" />
+                <e p="Vertex_Color_Unlit.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Free Low Poly Toon Nature" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="Standard Assets" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ImageEffects" t="Include">
+                  <e p="AntialiasingEditor.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Effects" t="Include">
+                <e p="ImageEffects" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="Antialiasing.cs" t="Include" />
+                    <e p="ImageEffectBase.cs" t="Include" />
+                    <e p="ImageEffects.cs" t="Include" />
+                    <e p="PostEffectsBase.cs" t="Include" />
+                    <e p="PostEffectsHelper.cs" t="Include" />
+                  </e>
+                  <e p="Shaders" t="Include">
+                    <e p="_Antialiasing" t="Include">
+                      <e p="DLAA.shader" t="Include" />
+                      <e p="FXAA2.shader" t="Include" />
+                      <e p="FXAA3Console.shader" t="Include" />
+                      <e p="FXAAPreset2.shader" t="Include" />
+                      <e p="FXAAPreset3.shader" t="Include" />
+                      <e p="NFAA.shader" t="Include" />
+                      <e p="SSAA.shader" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Polygonal Particles" t="Include">
+            <e p="Assets" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="GradientBackgroundShader.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Actor.cs" t="Include" />
+          <e p="BackgroundCube.cs" t="Include" />
+          <e p="BackgroundCubeObject.cs" t="Include" />
+          <e p="CameraActorFollow.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
+          <e p="MenuBackground.cs" t="Include" />
+          <e p="Rotate.cs" t="Include" />
+          <e p="SegmentControler.cs" t="Include" />
+          <e p="SegmentTrigger.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Obligatorisk Projekt.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_Obligatorisk Projekt.-1606187917.00" t="ExcludeRecursive" />
+  </component>
+</project>
