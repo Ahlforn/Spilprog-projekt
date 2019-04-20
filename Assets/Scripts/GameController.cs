@@ -48,6 +48,16 @@ public class GameController : MonoBehaviour
 
             segments[currentPosition].GetComponent<SegmentControler>().Activate();
         }
+
+        if (retryMenu.gameObject.active && Input.GetButtonDown("Submit"))
+        {
+            RetryLevel();
+        }
+
+        if (retryMenu.gameObject.active && Input.GetButtonDown("Cancel"))
+        {
+            BackToMenu();
+        }
     }
 
     public void DoDamage(int damage)
@@ -77,8 +87,7 @@ public class GameController : MonoBehaviour
         Vector3 pos = chest.transform.position;
         Destroy(chest);
         GameObject explosion = Instantiate(explosionPrefab, pos, transform.rotation);
-
-        Invoke("ActorExplode", 6);
+        Destroy(actor);
     }
 
     public void RetryLevel()

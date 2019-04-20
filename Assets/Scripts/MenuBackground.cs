@@ -42,6 +42,17 @@ public class MenuBackground : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetButtonDown("Submit"))
+        {
+            NewGame();
+        } else if (Input.GetButtonDown("Cancel"))
+        {
+            ExitGame();
+        }
+    }
+
     // Menu buttons. Logic should maybe be put in a controller, but it's very limited.
     public void NewGame()
     {
